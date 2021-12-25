@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Config/finishNeves.txt</file>
+		<file>Config/clothes.txt</file>
+		<file>Config/vase.txt</file>
+		<file>Config/ufo.txt</file>
+		<file>Config/plane.txt</file>
+		<file>Config/teapot.txt</file>
+		<file>Config/Neves.ico</file>
+		<file>Config/color/red.ico</file>
+		<file>Config/color/blue.ico</file>
+		<file>Config/color/yellow.ico</file>
+		<file>Config/color/green.ico</file>
+		<file>Config/color/cyan.ico</file>
+		<file>Config/color/orange.ico</file>
+		<file>Config/color/violet.ico</file>
+    </qresource>
+</RCC>

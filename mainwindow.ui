@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_openFile"/>
+    <addaction name="action_saveFile"/>
+   </widget>
+   <widget class="QMenu" name="menu_select">
+    <property name="title">
+     <string>选择拼图</string>
+    </property>
+    <addaction name="action_select1"/>
+    <addaction name="action_select2"/>
+    <addaction name="action_select3"/>
+    <addaction name="action_select4"/>
+    <addaction name="action_select5"/>
+    <addaction name="action_select6"/>
+    <addaction name="action_select7"/>
+   </widget>
+   <widget class="QMenu" name="menu_move">
+    <property name="title">
+     <string>移动拼图</string>
+    </property>
+    <addaction name="action_moveUp"/>
+    <addaction name="action_moveDown"/>
+    <addaction name="action_moveRight"/>
+    <addaction name="action_moveLeft"/>
+    <addaction name="separator"/>
+    <addaction name="action_moveUp5"/>
+    <addaction name="action_moveDown5"/>
+    <addaction name="action_moveRight5"/>
+    <addaction name="action_moveLeft5"/>
+   </widget>
+   <widget class="QMenu" name="menu_elementChange">
+    <property name="title">
+     <string>变换拼图</string>
+    </property>
+    <addaction name="action_elementTypeChange"/>
+    <addaction name="action_elementRotateChange"/>
+   </widget>
+   <widget class="QMenu" name="menu_show">
+    <property name="title">
+     <string>图案</string>
+    </property>
+    <addaction name="action_show1"/>
+    <addaction name="action_show2"/>
+    <addaction name="action_show3"/>
+    <addaction name="action_show4"/>
+    <addaction name="action_show5"/>
+    <addaction name="action_show6"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_select"/>
+   <addaction name="menu_move"/>
+   <addaction name="menu_elementChange"/>
+   <addaction name="menu_show"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_openFile">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_saveFile">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_select1">
+   <property name="icon">
+    <iconset theme=":/Config/color/red.ico"/>
+   </property>
+   <property name="text">
+    <string>①号拼图</string>
+   </property>
+   <property name="shortcut">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="action_select2">
+   <property name="icon">
+    <iconset theme=":/Config/color/yellow.ico"/>
+   </property>
+   <property name="text">
+    <string>②号拼图</string>
+   </property>
+   <property name="shortcut">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="action_select3">
+   <property name="icon">
+    <iconset theme=":/Config/color/green.ico"/>
+   </property>
+   <property name="text">
+    <string>③号拼图</string>
+   </property>
+   <property name="shortcut">
+    <string>3</string>
+   </property>
+  </action>
+  <action name="action_select4">
+   <property name="icon">
+    <iconset theme=":/Config/color/cyan.ico"/>
+   </property>
+   <property name="text">
+    <string>④号拼图</string>
+   </property>
+   <property name="shortcut">
+    <string>4</string>
+   </property>
+  </action>
+  <action name="action_select5">
+   <property name="icon">
+    <iconset theme=":/Config/color/blue.ico"/>
+   </property>
+   <property name="text">
+    <string>⑤号拼图</string>
+   </property>
+   <property name="shortcut">
+    <string>5</string>
+   </property>
+  </action>
+  <action name="action_select6">
+   <property name="icon">
+    <iconset theme=":/Config/color/violet.ico"/>
+   </property>
+   <property name="text">
+    <string>⑥号拼图</string>
+   </property>
+   <property name="shortcut">
+    <string>6</string>
+   </property>
+  </action>
+  <action name="action_select7">
+   <property name="icon">
+    <iconset theme=":/Config/color/orange.ico"/>
+   </property>
+   <property name="text">
+    <string>⑦号拼图</string>
+   </property>
+   <property name="shortcut">
+    <string>7</string>
+   </property>
+  </action>
+  <action name="action_moveUp">
+   <property name="text">
+    <string>向上25px</string>
+   </property>
+   <property name="shortcut">
+    <string>W</string>
+   </property>
+  </action>
+  <action name="action_moveDown">
+   <property name="text">
+    <string>向下25px</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="action_moveRight">
+   <property name="text">
+    <string>向右25px</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="action_moveLeft">
+   <property name="text">
+    <string>向左25px</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="action_elementTypeChange">
+   <property name="text">
+    <string>改变拼图形状</string>
+   </property>
+   <property name="shortcut">
+    <string>Q</string>
+   </property>
+  </action>
+  <action name="action_elementRotateChange">
+   <property name="text">
+    <string>改变拼图方向(顺时针旋转45°)</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="action_moveUp5">
+   <property name="text">
+    <string>向上1px</string>
+   </property>
+   <property name="shortcut">
+    <string>Up</string>
+   </property>
+  </action>
+  <action name="action_moveDown5">
+   <property name="text">
+    <string>向下1px</string>
+   </property>
+   <property name="shortcut">
+    <string>Down</string>
+   </property>
+  </action>
+  <action name="action_moveRight5">
+   <property name="text">
+    <string>向右1px</string>
+   </property>
+   <property name="shortcut">
+    <string>Left</string>
+   </property>
+  </action>
+  <action name="action_moveLeft5">
+   <property name="text">
+    <string>向左1px</string>
+   </property>
+   <property name="shortcut">
+    <string>Right</string>
+   </property>
+  </action>
+  <action name="action_show1">
+   <property name="text">
+    <string>正方形</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+1</string>
+   </property>
+  </action>
+  <action name="action_show2">
+   <property name="text">
+    <string>衣服</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+2</string>
+   </property>
+  </action>
+  <action name="action_show3">
+   <property name="text">
+    <string>花瓶</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+3</string>
+   </property>
+  </action>
+  <action name="action_show4">
+   <property name="text">
+    <string>飞碟</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+4</string>
+   </property>
+  </action>
+  <action name="action_show5">
+   <property name="text">
+    <string>茶壶</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+5</string>
+   </property>
+  </action>
+  <action name="action_show6">
+   <property name="text">
+    <string>飞机</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+6</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
